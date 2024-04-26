@@ -1,0 +1,135 @@
+@font-face {
+   font-family: "ClashDisplay-Light";
+   src: url(../fonts/ClashDisplay-Light.woff2);
+   font-weight: 200;
+}
+
+@font-face {
+   font-family: "Clash Display";
+   src: url(../fonts/ClashDisplay-Regular.woff2);
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: "Clash Display-Semibold";
+   src: url(../fonts/ClashDisplay-Semibold.woff2);
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: "Clash Display-Bold";
+   src: url(../fonts/ClashDisplay-Bold.woff2);
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: "Satoshi";
+   src: url(../fonts/Satoshi-Regular.woff2);
+   font-weight: 400;
+}
+
+:root {
+   --color-white: #ffffff;
+   --color-black: #000000;
+   --color-lite-gray: #f9f9f9;
+   --color-dark-primary: #2a254b;
+   --color-nav-links: #726e8d;
+}
+
+
+.btn {
+   color: var(--color-dark-primary);
+   background-color: var(--color-lite-gray);
+   padding: 16px 32px;
+   font-family: "Satoshi";
+   font-size: 16px;
+}
+
+.btn:hover {
+   transition: all 0.8s;
+   color: var(--color-lite-gray);
+   background-color: var(--color-dark-primary);
+}
+
+header>div {
+   display: grid;
+   grid-template-columns: 1fr 24px;
+   font-family: "Satoshi";
+   font-size: 14px;
+   background-color: var(--color-dark-primary);
+   color: var(--color-white);
+   padding: 11px 9px;
+   align-items: center;
+}
+
+header div p {
+   display: grid;
+   grid-template-columns: 16px 1fr;
+   justify-self: center;
+   column-gap: 8px;
+
+}
+
+header section {
+   display: grid;
+   grid-template-columns: 1fr 4fr 1fr;
+   padding: 30px 8vw;
+   align-items: center;
+
+}
+
+header section nav {
+   justify-self: center;
+}
+
+header section>a {
+   font-family: "Clash Display";
+   font-size: 24px;
+   color: #22202E;
+}
+
+header section nav ul {
+   display: flex;
+   list-style-type: none;
+   column-gap: 4vw;
+}
+
+header section ul a {
+   color: var(--color-nav-links);
+   font-family: "Satoshi";
+   font-size: 16px;
+}
+
+header section div.icons {
+   justify-self: end;
+   display: grid;
+   grid-template-columns: repeat(3, 16px);
+   column-gap: 16px;
+}
+
+main section.description {
+   display: grid;
+   padding: 50px 8vw;
+   column-gap: 6vw;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 38vw;
+   align-items: center;
+}
+
+main section.description img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+main section.description div.dimensions {
+   display: grid;
+   grid-template-columns: max-content 1px max-content 1px max-content;
+   align-items: center;
+   column-gap: 30px;
+}
+
+main section.description div.dimensions div {
+   color: var(--color-black);
+   height: 50%;
+}
